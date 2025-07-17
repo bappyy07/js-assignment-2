@@ -30,7 +30,19 @@ function addTodoItem(text) {
   editBtn.onclick = () => editTodoItem(span, editBtn);
 
 
-  
+  //   delete btn
+  const deleteBtn = document.createElement('button');
+  deleteBtn.textContent = "Delete";
+  deleteBtn.className = "text-red-600 hover:underline cursor-pointer";
+  deleteBtn.onclick = () => li.remove();
+
+  btns.appendChild(editBtn);
+  btns.appendChild(deleteBtn);
+
+  li.appendChild(span);
+  li.appendChild(btns);
+
+  todoList.appendChild(li);
 
 
 
