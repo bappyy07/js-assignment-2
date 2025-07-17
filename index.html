@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
-<body>
-  
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <h1 class="text-3xl font-bold md-5 text-center">To-Do list</h1>
+    <div class="flex mb-4">
+      <input type="text" placeholder="Add new task" id="toDo-input" class="flex-1 border border-yellow-600 p-2 rounded-2 focus:outline-none">
+      <button id="add-btn" class="bg-blue-500 text-white px-4 rounded-r hover:bg-blue-600 cursor-pointer">Add</button>
+    </div>
+
+    <ul id="toDo-list" class="space-y-2"></ul>
+  </div>
 
 
 
@@ -23,4 +32,5 @@
 
   <script src="./js/app.js"></script>
 </body>
+
 </html>
