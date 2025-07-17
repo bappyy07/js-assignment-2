@@ -23,5 +23,16 @@ function addTodoItem(text) {
   btns.className = "space-x-2";
 
 
+  //   btn edit
+  const editBtn = document.createElement('button');
+  editBtn.textContent = "Edit";
+  editBtn.className = "text-yellow-600 hover:underline cursor-pointer";
+  editBtn.onclick = () => editTodoItem(span, editBtn);
+
+
+  
+
+
+
 
 }
